@@ -1,13 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="3">
 
   <testsuite name="audibleTest"
     errors="0" failures="0" hostname="" id="" package="audibleTest" skipped="0"
-    tests="1" time="11.64" timestamp="">
+    tests="3" time="51.02" timestamp="">
   
-    <testcase name="Library Test" classname="audibleTest" time="11.64" assertions="1">
+    <testcase name="Search Test" classname="audibleTest" time="16.28" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Library Test" classname="audibleTest" time="5.866" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Category Test" classname="audibleTest" time="28.87" assertions="30">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
     </testcase>

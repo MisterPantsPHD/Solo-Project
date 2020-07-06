@@ -8,15 +8,15 @@ module.exports = {
     afterEach: browser =>{
         browser.end
     },
-    'Category Test': browser=>{
-        aObjects.categoriesTest()
-       },
     'Search Test': browser=>{
         aObjects.searchAndCartTest()
     },
     'Library Test': browser=>{
         aObjects.libraryTest()
     },
+    'Category Test': browser=>{
+        aObjects.categoriesTest()
+       },
 
 }
 

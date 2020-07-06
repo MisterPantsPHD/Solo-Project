@@ -1,11 +1,6 @@
 var audibleCommands={
     categoriesTest: function(data){
         this
-        .navigate()
-        .click('@signIn')
-        .setValue('@loginEmail' , 'francis.e.pants@gmail.com')
-        .setValue('@loginPassword' , 'V0tefortrump')
-        .click('@loginSubmit')
         .waitForElementVisible('@topBar')
         .click('@libraryLink')
         .assert.containsText('@categoryHeader' , 'Library')
@@ -79,17 +74,14 @@ var audibleCommands={
         .click('@browseDP')
         .click('@cReligion')
         .assert.containsText('@categoryHeader' , 'Religion')
+        .click('@home')
         return this
 
     },
     libraryTest: function(data){
         var self = this
         this
-        .navigate()
-        .click('@signIn')
-        .setValue('@loginEmail' , 'francis.e.pants@gmail.com')
-        .setValue('@loginPassword' , 'V0tefortrump')
-        .click('@loginSubmit')
+        .waitForElementVisible('@topBar')
         .click('@libraryLink')
         .click('@libraryListenNow')
         .api.windowHandles(function (result) {
@@ -103,6 +95,10 @@ var audibleCommands={
             var handle = result.value[0];
             self.switchWindow(handle);
         });
+        this
+        .click('@home')
+        return this
+        
 
     },
     searchAndCartTest: function(data){
@@ -128,6 +124,8 @@ var audibleCommands={
         .click('@addToCart')
         .assert.containsText('@cartTitle' , 'Warbreaker')
         .click('@removeFromCart')
+        .click('@home')
+        return this
     },
 
 }
